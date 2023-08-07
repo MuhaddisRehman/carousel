@@ -8,17 +8,22 @@
       content="An animated image carousel using HTML, CSS and JS."
     />
     <link rel="stylesheet" href="./scss/main.css" />
+    <script defer src="./js/index.js"></script>
     <title>Image Carousel</title>
   </head>
-  <body>
-    <section aria-label="Newest Photos">
-      <div class="carousel">
-        <button class="carousel-button prev">&laquo;</button>
-        <button class="carousel-button next">&raquo;</button>
-        <ul>
-          <li class="slide">
+  <body class="grid-place-center">
+    <section aria-label="Newest Photos bg-bright-orange ">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          &laquo;
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          &raquo;
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
             <img
-              src="https://plus.unsplash.com/premium_photo-1670179694048-5e4a1dcad9b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+              src="https://images.unsplash.com/photo-1690993660127-1a7cdd87ec9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
               alt=" a white abstract design"
             />
           </li>
